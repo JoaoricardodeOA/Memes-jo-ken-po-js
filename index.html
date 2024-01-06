@@ -14,11 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
     <div class="bg-video">
         <video class="video" autoplay loop muted>
-            <source src="./src/assets/videos/yugi.mp4" type="video/mp4">
+            <!--<source src="./src/assets/videos/yugi.mp4" type="video/mp4">-->
+            <source src="https://ia601306.us.archive.org/32/items/NyanCatoriginal_201509/Nyan%20Cat%20%5Boriginal%5D.ogv" type="video/ogg">
         </video>
     </div>
     <div class="container">
@@ -27,7 +33,7 @@
                 <span id="score_points">Win : 0 | Lose : 0</span>
             </div>
             <div class="menu_avatar">
-                <img id="card-image">
+                <img id="card-image" height="200px" width="150px" class="">
             </div>
             <div class="card_details frame">
                 <p id="card-name">Selecione uma</p>
@@ -44,9 +50,9 @@
                         <div class="card-infield">
                             <img id="player-field-card" height="180px" width="125px">
                         </div>
-                        <img height="100px" src="./src/assets/icons/millenium2.png">
+                        <img  height="100px" src="./src/assets/icons/millenium2.png">
                         <div class="card-infield">
-                            <img id="player-field-card" height="180px" width="125px">
+                            <img id="computer-field-card" height="180px" width="125px">
                         </div>
                     </div>
                     <div class="versus-bottom">
